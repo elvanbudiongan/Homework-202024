@@ -1,0 +1,118 @@
+body{
+	font-family: sans-serif;
+	padding: 0;
+	margin: 0;
+	background: url("bg-moon.png") no-repeat;
+	
+}
+
+header{
+	text-align: center;
+	padding: 10px;
+	text-decoration: none;
+	color: white;
+	text-shadow: 2px 2px #00000;
+	backdrop-filter: blur(5px);
+}
+
+.main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	justify-content: space-around;
+
+}
+
+#board{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+
+}
+
+.column{
+	width: 30%;
+	background-color: transparent;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid white;
+	backdrop-filter: blur(20px);
+}
+
+.column h2{
+	text-align: center;
+	color: white;
+	text-shadow: 2px 2px #00204a;
+	font-family: sans-serif;
+}
+
+.task-list{
+	min-height: 200px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	background-color: white;
+	border-radius: 5px;
+	opacity: 0.5;
+	color: black;
+
+}
+
+.task{
+	background-color: #dfefff;
+	padding: 10px;
+	margin: 5px 0;
+	border-radius: 5px;
+	cursor: move;
+}
+
+#task-creation{
+	margin-top: 20px;
+	width: 240px;
+	height: auto;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	outline: none;
+	font-size: 1.1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #aab0ee;
+  color: black;
+  font-size: 1.0rem;
+  transition: 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #00bbf0;
+}
+
+.task-item {
+  background-color:	#7393B3;
+  padding: 12px;
+  margin: 10px 10px;
+  cursor: grab;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.task-item.dragging {
+  opacity: 0.7;
+}
+
+
+
+#error-message{
+	color: red;
+}
+
+
